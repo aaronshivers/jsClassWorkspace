@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Numbers</title>
 </head>
 <body>
 
@@ -11,9 +11,10 @@
   <script>
 
     let x = 5
-    x = x + 1
+    x++
 
-    document.getElementById('demo').innerHTML = `The value is ${ x }`
+    const demo = document.getElementById('demo')
+    demo.innerHTML = `The value is ${ x }`
 
   </script>
 </body>
