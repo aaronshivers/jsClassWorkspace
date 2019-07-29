@@ -1,12 +1,12 @@
 // Buttons
-resetButton = document.getElementById('reset')
-incrementButton = document.getElementById('increment')
-decrementButton = document.getElementById('decrement')
-addButton = document.getElementById('add')
-subtractButton = document.getElementById('subtract')
-multiplyButton = document.getElementById('multiply')
-divideButton = document.getElementById('divide')
-remainderButton = document.getElementById('remainder')
+const resetButton = document.getElementById('reset')
+const incrementButton = document.getElementById('increment')
+const decrementButton = document.getElementById('decrement')
+const addButton = document.getElementById('add')
+const subtractButton = document.getElementById('subtract')
+const multiplyButton = document.getElementById('multiply')
+const divideButton = document.getElementById('divide')
+const remainderButton = document.getElementById('remainder')
 
 // Inputs
 const input1 = document.getElementById('input1')
