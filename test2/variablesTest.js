@@ -1,0 +1,1 @@
+let car, house, dog, table, fish, ladder, chair, picture, fan, rat

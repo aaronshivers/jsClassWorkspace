@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Creepster&display=swap');
+
+body {
+  font-family: 'Beth Ellen', cursive;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+#flame1 {
+  position: absolute;
+  width: 3%;
+  height: 8%;
+  top: 25%;
+  left: 13%;
+}
+
+#flame2 {
+  position: absolute;
+  width: 3%;
+  height: 8%;
+  top: 26%;
+  left: 33%;
+}
+
+#dog {
+  width: 50vw;
+  z-index: -1;
+}
