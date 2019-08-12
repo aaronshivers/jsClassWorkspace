@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example 4</title>
+</head>
+<body>
+  <h2>JavaScript Program</h2>
+  <p id="demo"></p>
+  <script>
+    let text = ''
+
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 2; j++) {
+        text += `The number is ${ j } ${ '<br />' }`
+        text += `The number is ${ i } ${ '<br />' }`
+      }
+    }
+
+    document.getElementById('demo').innerHTML = text
+  </script>
+</body>
+</html>

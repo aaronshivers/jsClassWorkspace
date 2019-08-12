@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example 1</title>
+</head>
+<body>
+  <h2>JavaScript Program</h2>
+  <p id="demo"></p>
+  <script>
+    let text = ''
+    let i = 0
+
+    while (i < 10) {
+      text += `The number is ${ i } ${ '<br />' }`
+      i++
+    }
+
+    document.getElementById('demo').innerHTML = text
+  </script>
+</body>
+</html>

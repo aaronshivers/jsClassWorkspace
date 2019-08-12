@@ -9,17 +9,18 @@ let isPlaying = false
 
 const head = document.createElement('img')
 head.setAttribute('id', 'head')
-head.classList.add('head')
+head.classList.add('head', 'center')
 head.src = './images/neutral.png'
 app.appendChild(head)
 
 const anthemButton = document.createElement('button')
 anthemButton.innerText = 'Play Anthem'
-anthemButton.setAttribute('class', 'button')
+anthemButton.classList.add('button', 'center')
 app.appendChild(anthemButton)
-anthemButton.addEventListener('click', () => {
+anthemButton.addEventListener('click', event => {
   isPlaying = !isPlaying
   console.log('isPlaying', isPlaying)
+  isPlaying ? event.target.innerText = 'pause anthem' : event.target.innerText = 'play anthem'
   isPlaying ? playAnthem() : pauseAnthem()
 })
 
@@ -63,6 +64,3 @@ head.addEventListener('click', event => {
   setTimeout(() => head.src = './images/neutral.png'
 ,1000)
 })
-
-
-
