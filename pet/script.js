@@ -6,12 +6,6 @@ head.classList.add('head')
 head.src = './images/neutral.png'
 app.appendChild(head)
 
-const body = document.createElement('img')
-body.setAttribute('id', 'body')
-body.classList.add('body')
-body.src = './images/body.png'
-app.appendChild(body)
-
 const animations = [
   {
     audio: './sounds/im-really-rich.wav',

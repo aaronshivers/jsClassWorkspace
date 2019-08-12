@@ -1,20 +1,4 @@
 img {
   position: relative;
-}
-
-.head {
-  position: absolute;
-  width: 50vw;
-  margin-left: 30vw;
-  /*right: 25vw;*/
-  z-index: 2;
-}
-
-.body {
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
-  /*margin-left: 50vw;*/
-  /*right: 50vw;*/
-  top: 30vh;
+  width: 100vw
 }
