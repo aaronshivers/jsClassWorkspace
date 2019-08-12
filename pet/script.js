@@ -1,10 +1,28 @@
 const app = document.getElementById('app')
 
+
+const anthem = new Audio('./sounds/anthem.mp3')
+anthem.volume = 0.05
+const playAnthem = () => anthem.play()
+const pauseAnthem = () => anthem.pause()
+let isPlaying = false
+
 const head = document.createElement('img')
 head.setAttribute('id', 'head')
 head.classList.add('head')
 head.src = './images/neutral.png'
 app.appendChild(head)
+
+const anthemButton = document.createElement('button')
+anthemButton.innerText = 'Play Anthem'
+anthemButton.setAttribute('class', 'button')
+app.appendChild(anthemButton)
+anthemButton.addEventListener('click', () => {
+  isPlaying = !isPlaying
+  console.log('isPlaying', isPlaying)
+  isPlaying ? playAnthem() : pauseAnthem()
+})
+
 
 const animations = [
   {
@@ -37,10 +55,8 @@ const animations = [
   }
 ]
 
-
 head.addEventListener('click', event => {
   const randomAnimation = Math.floor(Math.random() * animations.length)
-  console.log(randomAnimation)
   const audio = new Audio(animations[randomAnimation].audio)
   audio.play()
   head.src = animations[randomAnimation].picture

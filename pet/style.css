@@ -1,4 +1,25 @@
+html {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #fff;
+  }
+  33% {
+    background-color: #001F3F;
+  }
+  66% {
+    background-color: #FF4136;
+  }
+}
+
 img {
   position: relative;
   width: 100vw
+}
+
+.button {
+  padding: 15px;
+  background-color: red;
 }
