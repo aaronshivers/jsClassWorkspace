@@ -1,0 +1,23 @@
+html {
+  font-size: 4vw;
+  font-family: 'Courier New', monospace;
+  color: #123;
+  background-color: #fefeff
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #123;
+}
