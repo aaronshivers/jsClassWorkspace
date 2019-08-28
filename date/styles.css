@@ -1,0 +1,31 @@
+body {
+  font-size: 1.4rem;
+  font-family: 'Courier New', monospace;
+  background: #fcfcff;
+  color: #123;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  padding: 10vw;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #123;
+}
+
+input {
+  width: 20vw;
+  border: 1px solid #123;
+  padding: 15px 10px;
+  outline: none;
+  text-align: center;
+}
