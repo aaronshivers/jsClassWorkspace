@@ -1,4 +1,4 @@
-// Buttons
+i// Buttons
 const resetButton = document.getElementById('reset')
 const incrementButton = document.getElementById('increment')
 const decrementButton = document.getElementById('decrement')

@@ -1,5 +1,7 @@
 const posNeg = (a, b, param) => {
-  return a < 0 && b > 0 || b < 0 && a > 0 || param && a < 0 && b < 0
+  const oneNegOnePos = a < 0 && b > 0 || b < 0 && a > 0
+  const bothNegAndTruePassedIn = param && a < 0 && b < 0
+  return oneNegOnePos || bothNegAndTruePassedIn
 }
 
 console.log(posNeg(0, 0, false)) // false
